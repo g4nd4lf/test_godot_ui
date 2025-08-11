@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://cemh5ee3gqt3f"]
+
+[ext_resource type="Texture2D" uid="uid://b3lqhqhreqp7r" path="res://fresa.jpg" id="1_fro3j"]
+[ext_resource type="Texture2D" uid="uid://daetidc5un8vy" path="res://manzana.jpg" id="2_sm4xf"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_fro3j")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 6
+texture = ExtResource("2_sm4xf")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="TextureRect3" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("1_fro3j")
+expand_mode = 3
+stretch_mode = 5
