@@ -29,7 +29,6 @@ expand_mode = 3
 stretch_mode = 5
 
 [node name="TextureRect2" type="TextureRect" parent="HBoxContainer"]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 texture = ExtResource("2_sm4xf")

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfpamtkbd1oto"]
+[gd_scene load_steps=5 format=3 uid="uid://ce32xpb3t6tas"]
 
-[ext_resource type="Script" uid="uid://d33uaedjbfjif" path="res://test_vboxcontainer.gd" id="1_i3r3a"]
-[ext_resource type="Texture2D" uid="uid://daetidc5un8vy" path="res://manzana.jpg" id="2_i3r3a"]
-[ext_resource type="Texture2D" uid="uid://b3lqhqhreqp7r" path="res://fresa.jpg" id="2_ib5hr"]
+[ext_resource type="Script" uid="uid://d33uaedjbfjif" path="res://test_vboxcontainer.gd" id="1_efue2"]
+[ext_resource type="Texture2D" uid="uid://b3lqhqhreqp7r" path="res://fresa.jpg" id="2_31j8y"]
+[ext_resource type="Texture2D" uid="uid://daetidc5un8vy" path="res://manzana.jpg" id="3_2cjit"]
+[ext_resource type="Script" uid="uid://dbfiyp5louvqo" path="res://node_2d.gd" id="4_be53a"]
 
 [node name="UILayer" type="Control"]
 layout_mode = 3
@@ -13,12 +14,12 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-script = ExtResource("1_i3r3a")
+script = ExtResource("1_efue2")
 
 [node name="Avatar1" type="TextureRect" parent="."]
 layout_mode = 2
 offset_right = 1152.0
-texture = ExtResource("2_ib5hr")
+texture = ExtResource("2_31j8y")
 expand_mode = 3
 
 [node name="info1" type="Label" parent="."]
@@ -44,7 +45,7 @@ autowrap_mode = 2
 layout_mode = 0
 offset_right = 1152.0
 pivot_offset = Vector2(-100, 20)
-texture = ExtResource("2_i3r3a")
+texture = ExtResource("3_2cjit")
 expand_mode = 3
 
 [node name="info2" type="Label" parent="."]
@@ -70,7 +71,7 @@ autowrap_mode = 2
 [node name="Avatar3" type="TextureRect" parent="."]
 layout_mode = 0
 offset_right = 1152.0
-texture = ExtResource("2_ib5hr")
+texture = ExtResource("2_31j8y")
 expand_mode = 3
 
 [node name="info3" type="Label" parent="."]
@@ -95,7 +96,7 @@ offset_right = 1152.0
 grow_horizontal = 0
 grow_vertical = 2
 pivot_offset = Vector2(-100, 20)
-texture = ExtResource("2_i3r3a")
+texture = ExtResource("3_2cjit")
 expand_mode = 3
 
 [node name="info4" type="Label" parent="."]
@@ -116,3 +117,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 justification_flags = 162
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+script = ExtResource("4_be53a")
